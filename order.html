@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: yellowgreen;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 25px;
+  height: 700px;
+  background-color: white;
+  
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 50px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Order</h1>
+    <p>Please fill in this form to mark your order.</p>
+    <hr>
+
+    <label for="Rname"><b>Restaurant Name</b></label>
+    <input type="text" placeholder="Enter the name of the restaurant" name="Rname" id="Rname" required>
+
+    <label for="Rid"><b>Restaurant ID</b></label>
+    <input type="number" placeholder="Enter the restaurant ID" name="Rid" id="Rid" required><br>
+
+    <label for="Mid"><b>Menu ID</b></label>
+    <input type="number" placeholder="Enter the Menu ID" name="Mid" id="Mid" required><br>
+    <label for="Mname"><b>Menu Name</b></label>
+    <input type="text" placeholder="Enter the name of menu" name="Mname" id="Mname" required>
+    
+    <label for="items"><b>Choose your items:</b></label>
+        
+        <select id = "items">
+          <option value="French Fries">French Fries</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Lunch">Lunch</option>
+          </select>
+    <button type="submit" class="registerbtn">Submit</button>
+  </div>
+  
+</form>
+
+</body>
+</html>
